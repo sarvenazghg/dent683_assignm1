@@ -50,10 +50,10 @@ dem18_y <- dem18 %>% mutate (year =2018)
 
 # 6.4 I would like to creat another data set, having id, year and age 
 # 
-dem12.syr <- dem12_year %>% select (SEQN, year,RIDAGEYR)
-dem14.syr <- dem14_year %>% select (SEQN, year,RIDAGEYR)
-dem16.syr <- dem16_year %>% select (SEQN, year,RIDAGEYR)
-dem18.syr <- dem18_year %>% select (SEQN, year,RIDAGEYR)
+dem12.syr <- dem12_y %>% select (SEQN, year,RIDAGEYR)
+dem14.syr <- dem14_y %>% select (SEQN, year,RIDAGEYR)
+dem16.syr <- dem16_y %>% select (SEQN, year,RIDAGEYR)
+dem18.syr <- dem18_y %>% select (SEQN, year,RIDAGEYR)
 
 # To get only one data set, now i merge these four sub dataset 
 mrg2 <- bind_rows(dem12.syr, dem14.syr, dem16.syr,dem18.syr)
