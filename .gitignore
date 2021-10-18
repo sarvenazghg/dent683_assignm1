@@ -13,7 +13,10 @@
 
 # Output files from R CMD build
 /*.tar.gz
-
+# Ask git to ignore xlsx files
+* .xlsx
+# Ask git to ignore csv files
+* .csv
 # Output files from R CMD check
 /*.Rcheck/
 
@@ -37,3 +40,7 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+# ask git to ignore xlsx files
+* .xlsx
+# Ask git to ignore csv files
+* .csv
