@@ -62,6 +62,7 @@ mrg2 <- bind_rows(dem12.syr, dem14.syr, dem16.syr,dem18.syr)
 final_mrg <- merge(mrg2, mrg, by = "SEQN", 
                    all.x = F,all.y =F)
 # To save the file in data folder 
+# First, I'd like to make sure I am in the right folder
 here()
 write.csv (final_mrg, here("Data","Dem_Oh_17_10_2021.csv"))
 
