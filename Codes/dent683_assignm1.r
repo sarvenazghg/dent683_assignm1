@@ -43,10 +43,10 @@ mrg <- bind_rows(oh18_2,oh16_2,oh14_2,oh12_2)
 
 #6.3 I would like to add a new variable called year 
 # (corresponds to the year of the survey)
-dem12_year <- dem12 %>% mutate(year =2012)
-dem14_year <- dem14 %>% mutate(year =2014)
-dem16_year <- dem16 %>% mutate(year =2016)
-dem18_year <- dem18 %>% mutate (year =2018)
+dem12_y <- dem12 %>% mutate(year =2012)
+dem14_y <- dem14 %>% mutate(year =2014)
+dem16_y <- dem16 %>% mutate(year =2016)
+dem18_y <- dem18 %>% mutate (year =2018)
 
 # 6.4 I would like to creat another data set, having id, year and age 
 # 
@@ -67,4 +67,4 @@ write.csv (final_mrg, here("Data","Dem_Oh_17_10_2021.csv"))
 
 # I tweaked the name of my file , so i deleted the first one from the Data folder
 # number of participants in the final merged data set by the year of survey
-final_mrg %>% group_by(year)%>%
+final_mrg %>% group_by(year)%>% tally()
